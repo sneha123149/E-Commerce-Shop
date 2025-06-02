@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Message Success</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: white;
+    }
+
+    .message-box {
+      display: none;
+      background-color: #28a745;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      position: center;
+      top: 10%;
+      animation: fadeIn 1s ease-out forwards;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-box.show {
+      display: block;
+    }
+
+    .message-box .icon {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="message-box">
+    <span class="icon">&#10004;</span>  Send Message Successfully
+  </div>
+
+  <script>
+    
+    setTimeout(() => {
+      document.querySelector('.message-box').classList.add('show');
+    }, 1000);
+
+    
+    setTimeout(() => {
+      document.querySelector('.message-box').classList.remove('show');
+    }, 4000);
+  </script>
+
+</body>
+</html>

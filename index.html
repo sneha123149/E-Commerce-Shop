@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEasy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('image/bg2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .header {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+            color: #ffc107;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .hero-section button {
+            background-color: #ffc107;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero-section button:hover {
+            background-color: #e0a800;
+            transform: scale(1.1);
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: rgba(248, 249, 250, 0.9);
+            color: black;
+        }
+
+        .feature-card {
+            flex: 1;
+            max-width: 300px;
+            background: white;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>ShopEasy</h1>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about1.html">About</a>
+            <a href="contact2.html">Contact</a>
+            <a href="od.html">Offer and Discount</a>
+            <a href="ls1.html">Login/Sign Up</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <h1>Discover the Joy of Shopping</h1>
+        <p>Exclusive deals and products just for you. Shop now and save big!</p>
+        <button class="shop-now-button" onclick="window.location.href='shop.html';">Shop Now</button>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <img src="image/qp.jpg" alt="Quality Products">
+            <h3>Quality Products</h3>
+            <p>Shop from a wide variety of high-quality items.</p>
+        </div>
+        <div class="feature-card">
+            <img src="image/fd.png" alt="Fast Delivery">
+            <h3>Fast Delivery</h3>
+            <p>Get your orders delivered to your doorstep quickly.</p>
+        </div>
+        <div class="feature-card">
+            <img src="image/ss.jpg" alt="24/7 Support">
+            <h3>24/7 Support</h3>
+            <p>Our support team is here to help you anytime.</p>
+        </div>
+        <div class="feature-card">
+            <img src="image/dis.jpg" alt="Discount">
+            <h3>Discount</h3>
+            <p>75% discount for your first and second order.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</body>
+</html>
